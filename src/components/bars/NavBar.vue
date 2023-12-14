@@ -54,7 +54,7 @@
           <li class="text-gray-100 hover:text-indigo-400">Swop</li>
           <li class="text-gray-100 hover:text-indigo-400">Demo</li>
           <ButtonCheck @click="modal.setIsOpened(true)">Connect Wallet</ButtonCheck>
-          <ButtonCheck @click="modal.setIsOpened(true)">My Page</ButtonCheck>
+          <ButtonCheck>My Page</ButtonCheck>
         </ul>
       </nav>
     </div>
@@ -62,7 +62,6 @@
 
 <script setup>
 import { modal } from "@/stores/modal";
-import ButtonCheck from "/src/components/utils/ButtonCheck.vue";
 import { ref } from "vue";
 
 let showMenu = ref(false);

@@ -1,10 +1,11 @@
 <template>
   <div 
-    class="absolute w-full bg-black bg-opacity-30 h-screen top-0 left-0 flex justify-center px-8">
+    class="absolute w-full bg-black bg-opacity-30 h-screen top-0 left-0 flex justify-center">
     <div 
-      class="p-4 bg-white self-start mt-32 max-w-screen-md">
+      class="p-6 bg-white self-start mt-32 max-w-lg w-5/6">
       <slot></slot>
-      <button @click="modal.setIsOpened(false)" class="text-black bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">Close</button>
+      <br>
+      <ButtonCheck class="w-full" @click="modal.setIsOpened(false)">Close</ButtonCheck>
     </div>
     
   </div>
@@ -12,4 +13,5 @@
 
 <script setup>
 import { modal } from "@/stores/modal";
+
 </script>
